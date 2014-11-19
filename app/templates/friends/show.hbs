@@ -1,0 +1,13 @@
+<p>
+  {{#link-to 'index'}}Friends{{/link-to}} &gt;
+  {{fullName}}
+</p>
+
+<ul>
+  <li>First Name: {{firstName}}</li>
+  <li>Last Name: {{lastName}}</li>
+  <li>Email: {{email}}</li>
+  <li>Twitter: {{twitter}}</li>
+  <li>{{link-to 'Edit info' 'friends.edit' this}}</li>
+  <li><a href="#" {{action "delete" this}}>Delete</a></li>
+</ul>
